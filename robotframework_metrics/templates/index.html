@@ -412,6 +412,7 @@
                   <th>Min Duration(s)</th>
                   <th>Max Duration(s)</th>
                   <th>Average Duration(s)</th>
+                  <th>Total Duration(s)</th>
               </tr>
           </thead>
           <tbody>
@@ -423,6 +424,7 @@
                   <td>{{ (value['time_min']/1000)|round(2) }}</td>
                   <td>{{ (value['time_max']/1000)|round(2) }}</td>
                   <td>{{ (value['time_mean']/1000)|round(2) }}</td>
+                  <td>{{ (value['time_total']/1000|round(2) )}}</td>
                 </tr>
               {% endfor %}
             {% endif %}
